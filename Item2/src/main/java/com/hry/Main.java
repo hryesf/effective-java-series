@@ -16,7 +16,7 @@ public class Main {
         cocaCola2.setCarbohydrate(27);
 
         // Builder pattern
-        NutritionFactsBuilder cocaCola = new NutritionFactsBuilder.Builder(240, 8)
+        NutritionFactsBuilder cocaCola3 = new NutritionFactsBuilder.Builder(240, 8)
                 .calories(100).sodium(35).carbohydrate(27).build();
 
     }
