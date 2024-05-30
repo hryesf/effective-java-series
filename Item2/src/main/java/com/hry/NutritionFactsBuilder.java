@@ -23,6 +23,9 @@ public class NutritionFactsBuilder {
             this.servings = servings;
         }
 
+        // The builder’s setter methods return the builder itself
+        // so that invocations can be chained
+
         public Builder calories(int val) {
             calories = val;
             return this;
