@@ -7,5 +7,13 @@ public class Main {
         NutritionFactsTelescopingCons cocaCola1 =
                 new NutritionFactsTelescopingCons(240, 8, 100, 0, 35, 27);
 
+        // JavaBeans
+        NutritionFactsJavaBeans cocaCola2 = new NutritionFactsJavaBeans();
+        cocaCola2.setServingSize(240);
+        cocaCola2.setServings(8);
+        cocaCola2.setCalories(100);
+        cocaCola2.setSodium(35);
+        cocaCola2.setCarbohydrate(27);
+
     }
 }
