@@ -1,6 +1,6 @@
 package com.hry;
 
-public class Main {
+public class StringExample {
     public static void main(String[] args) {
 
         stringCreation();
