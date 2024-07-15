@@ -28,9 +28,17 @@ while the factory method is never required to do so and won’t in practice.
 there’s no need to create more than one instance of a given adapter to a given object.
 
 ### 4. Autoboxing
-* To detect invalid parameters as soon as possible, check parameter validity in the builder’s constructor and methods.
 
+The lesson is clear: prefer primitives to boxed primitives, 
+and watch out for unintentional autoboxing.
 
-#### The Builder pattern is well suited to class hierarchies.
-
-* Abstract classes have abstract builders; concrete classes have concrete builders. 
+```Java
+private static long sum() {
+    Long sum = 0L;
+    for (long i = 0; i <= Integer.MAX_VALUE; i++)
+        sum += i;
+    return sum;
+}
+```
+The variable sum is declared as a Long instead of a long, which means that 
+the program constructs about 2^31 unnecessary Long instances.
