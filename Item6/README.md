@@ -9,8 +9,10 @@
 ## Solutions:
 
 ### 1.  String :
+```Java
         String s = new String("bikini"); // DON'T DO THIS!
         String s = "bikini"; // DO THIS!
+```
 
 While String.matches is the easiest way to check if a string matches
 a regular expression, it’s not suitable for repeated use in performance-critical
